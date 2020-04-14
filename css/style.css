@@ -1,0 +1,75 @@
+/*Base styling*/
+.main-heading{
+	text-align: center;
+	font-size: 1.75em;
+}
+h1, h2, p{
+	font-family: Verdana, Geneva, sans-serif;
+}
+section{
+	position: relative;
+	border: 1px solid black;
+	background-color: lightgrey;
+	margin-top: 30px;
+}
+h2#saffron{
+	background-color: #FF9933;
+}
+h2#white{
+	background-color: #FFFFFF;
+}
+h2#green{
+	background-color: #138808;
+	color: white;
+}
+/*Title region - position at top right corner of the section*/
+.section-title{
+	border: 1px solid black;
+	border-top: none;
+	border-right: none;
+	width: 200px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	margin: 0px;
+	padding: 5px;
+	text-align: center;
+	font-size: 1.25em;
+}
+
+.section-content{
+	padding: 25px 10px 0px 10px; 	
+}
+*{
+	box-sizing: border-box;
+}
+
+/*Mobile view - less than or equal to 767px - 2 sections in row-1 and 1 section in row-2*/
+@media(max-width: 767px){
+	.col-sm-12{
+		margin: 30px 60px;
+	}
+}
+
+/*Tablet view - between 768px and 991px - 1 section per row*/
+@media(min-width: 768px) and (max-width: 991px){
+	.col-md-6, .col-md-12{
+		float: left;
+		margin-left: 3.33%;
+	}
+	.col-md-6{
+		width: 45%;
+	}
+	.col-md-12{
+		margin-right: 3.33%;
+	}
+}
+
+/*Desktop view - 992px and above - 3 sections in one row*/
+@media(min-width: 992px){
+	.col-lg-4{
+		float: left;
+		width: 30%;
+		margin-left: 2.5%;
+	}
+}
